@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.header {
+  width: 100%;
+  background-color: darkblue;
+  overflow: auto;
+}
+
+.header a{
+  float: right;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.header a:hover {
+  background-color: grey;
+}
+
+.left {
+  float: left;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  Padding: 0 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgreen;
+font-size: 23px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+   padding: 40px 25px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: orange;
+}
+
+li a:hover{
+  background-color: orange;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+* {box-sizing: border-box;}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=number], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkblue;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+p {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 35px;
+}
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightgreen;
+   color: black;
+   text-align: center;
+   height: 200px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#"><i class="fa fa-youtube-square"></i></a>
+  <a href="#"><i class="fa fa-pinterest-square"></i></a>
+  <a href="#"><i class="fa fa-twitter-square"></i></a>
+  <a href="#"><i class="fa fa-linkedin-square"></i></a>
+  <a href="#"><i class="fa fa-facebook-square"></i></a>
+  
+<div class="left">
+  <h4>varada28@gmail.com / 9788482290</h4>
+</div>
+</div>
+
+
+ <ul>   
+  <li><a href="home.html"><b>Home</b></a></li>
+  <li><a href="aboutus.html"><b>About Us</b></a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><b>Services</b></a>
+    <div class="dropdown-content">
+      <a href="Containerhouse.html">Container house</a>
+      <a href="Containeroffice.html">Container office</a>
+      <a href="Containertoilet.html">Container toilet</a>
+      <a href="Containerconferenceroom.html">Container conferenceroom</a>
+      <a href="Containerclassroom.html">Container classroom</a>
+      <a href="Containerhotel.html">Container hotel</a>
+      <a href="Containerkitchen.html">Container kitchen</a>
+      <a href="Containercafe.html">Container cafe</a>
+      <a href="Containercabin.html">Container cabin</a>
+      <a href="Containerpantry.html">Container pantry</a>
+  <li><a href="gallery.html"><b>Gallery</b></a></li>
+  <li><a href="blog.html"><b>Blog</b></a></li>
+  <li><a href="contactus.html"><b>Contact Us</b></a></li>
+</div>
+  </li>
+</ul>
+
+<img src="shipping1.jpg" alt="HTML5 Icon" width="100%" height="450">
+
+<div class="row">
+  <div class="column">
+    <h2>Request For Container Construction</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname">
+
+    <label for="Phone Number">Phone Number:</label>
+    <input type="text" id="phone number" name="phone number">
+
+    <label for="subject">Message:</label>
+    <textarea id="message" name="message" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </div>
+  
+  <div class="column">
+   
+<h2>Contact Us</h2>
+<p><b>&#128222; Phone Number</b><br>
+9884412272 / 9176481810<br>
+638016734<br><br>
+
+<b>&#128231; Email Address</b><br>
+info@accindia.net<br>
+
+sureshbaboo@accindia.net<br>
+
+adithya@accindia.net<br><br>
+
+<b>Our Location</b><br>
+Adithya Container Conversions,
+OFFICE: 28, Creation Adarsh, 3rd Street,
+Sowrashtra Nagar, Choolaimedu, Chennai - 600094.
+Landline: 044 43540684.<br><br>
+
+<b>&#129333; Contact Person</b>
+Sembiam manali village,
+vichur chennai, Tamil Nadu - 600103.
+Mobile: +91 9176481810 / 638016734<br><br>
+
+Adithya Container Conversions,
+OFFICE: 28, Creation Adarsh, 3rd Street,
+Sowrashtra Nagar, Choolaimedu, Chennai - 600094.<br><br>
+Landline: 044 43540684.
+</p>
+
+  </div>
+  
+</div>
+
+<div class="footer">
+  <h3>Footer</h3>
+  <h2>Fixed/Sticky Footer Example</h2>
+<h3>The footer is placed at the bottom of the page.</h3>
+</div>
+
+</body>
+</html>

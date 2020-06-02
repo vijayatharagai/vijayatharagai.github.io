@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.header {
+  width: 100%;
+  background-color: darkblue;
+  overflow: auto;
+}
+
+.header a {
+  float: right;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.header a:hover {
+  background-color: grey;
+}
+
+.left {
+  float: left;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  Padding: 0 0 0 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgreen;
+font-size: 23px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+   padding: 40px 25px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: orange;
+}
+
+li a:hover{
+  background-color: orange;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {box-sizing: border-box;}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightgreen;
+   color: black;
+   text-align: center;
+   height: 200px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#"><i class="fa fa-youtube-square"></i></a>
+  <a href="#"><i class="fa fa-pinterest-square"></i></a>
+  <a href="#"><i class="fa fa-twitter-square"></i></a>
+  <a href="#"><i class="fa fa-linkedin-square"></i></a>
+  <a href="#"><i class="fa fa-facebook-square"></i></a>
+  <div class="left">
+  <p>varada28@gmail.com / 9788482290</p>
+</div>
+</div>
+
+ <ul>   
+  <li><a href="home.html"><b>Home</b></a></li>
+  <li><a href="aboutus.html"><b>About Us</b></a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><b>Services</b></a>
+    <div class="dropdown-content">
+      <a href="Containerhouse.html">Container house</a>
+      <a href="Containeroffice.html">Container office</a>
+      <a href="Containertoilet.html">Container toilet</a>
+      <a href="Containerconferenceroom.html">Container conferenceroom</a>
+      <a href="Containerclassroom.html">Container classroom</a>
+      <a href="Containerhotel.html">Container hotel</a>
+      <a href="Containerkitchen.html">Container kitchen</a>
+      <a href="Containercafe.html">Container cafe</a>
+      <a href="Containercabin.html">Container cabin</a>
+      <a href="Containerpantry.html">Container pantry</a>
+  <li><a href="gallery.html"><b>Gallery</b></a></li>
+  <li><a href="blog.html"><b>Blog</b></a></li>
+  <li><a href="contactus.html"><b>Contact Us</b></a></li>
+</div>
+  </li>
+</ul>
+
+<h3> About Us</h3>
+<p> We are one of the manufacturer and supplier of container house that includes decoration of inner walls, with flooring, doors, windows, lighting, socket,
+ switches, network security, exhaust fans, etc. In order to fabricate the provided container house in tune with the international quality standards, our agile
+ team of professionals utilizes quality assured raw materials and progressive techniques to manufacturer these container house.</p> 
+
+<div class="row">
+<div class="column">
+
+<img src="shipping_3.jpg" alt="shipping_3" width="600" height="400">
+<h3 style="text-align:center;"> Our Mission</h3>
+<p><i>To bring you close to nature by providing eco friendly, affordable & luxury living solutions to remote locations</i></p>
+
+</div>
+
+
+<div class="column">
+
+<img src="shipping_3.jpg" alt="shipping_3" width="600" height="400">
+<h3 style="text-align:center;"> Our Vision</h3>
+<p><i>Make affordable and luxury living solutions available to remote locations where traditional solutions are not accessible</i></p>
+
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+  <h2>Fixed/Sticky Footer Example</h2>
+<p>The footer is placed at the bottom of the page.</p>
+</div>
+
+</body>
+</html>
